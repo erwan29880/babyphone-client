@@ -8,23 +8,23 @@ if [ ! -z "$1" ]
 then 
     if [ "$1" == "reset" ]
     then 
-        if [ ! -f  "./fr.erwan.babyphone.client/src/configuration/Constantes_gen.java" ]
+        if [ ! -f  "./fr.erwan.babyphone.client/src/configuration/Constantes_gen.java.bak" ]
         then 
             echo "Vous ne pouvez pas réinitaliser si vous n'avez pas installé"
             exit 1
         fi
         mv ./fr.erwan.babyphone.client/src/configuration/Constantes.java  ./fr.erwan.babyphone.client/src/configuration/Constantes.java.bak
-        mv ./fr.erwan.babyphone.client/src/configuration/Constantes_gen.java ./fr.erwan.babyphone.client/src/configuration/Constantes.java
+        mv ./fr.erwan.babyphone.client/src/configuration/Constantes_gen.java.bak ./fr.erwan.babyphone.client/src/configuration/Constantes.java
     fi
 
     if [ "$1" == "install" ]
         then 
-            if [ -f  "./fr.erwan.babyphone.client/src/configuration/Constantes_gen.java" ]
+            if [ -f  "./fr.erwan.babyphone.client/src/configuration/Constantes_gen.java.bak" ]
             then 
                 echo "Vous ne pouvez pas installer si vous n'avez pas réinitialsié"
                 exit 1
             fi
-            mv ./fr.erwan.babyphone.client/src/configuration/Constantes.java ./fr.erwan.babyphone.client/src/configuration/Constantes_gen.java
+            mv ./fr.erwan.babyphone.client/src/configuration/Constantes.java ./fr.erwan.babyphone.client/src/configuration/Constantes_gen.java.bak
             mv ./fr.erwan.babyphone.client/src/configuration/Constantes.java.bak ./fr.erwan.babyphone.client/src/configuration/Constantes.java
     fi
     echo "Vérification : "
