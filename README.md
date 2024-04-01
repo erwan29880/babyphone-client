@@ -15,4 +15,7 @@ Version utilisée : jsch-0.1.55.jar
 
 ## lancement : 
 
-La méthode main est dans la classe App.java .
+La méthode main est dans la classe App.java .  
+
+### fichier .sh et .bat   
+Destinés à mon usage pour le développement et le test. Les tests dépendent de la configuration et ne sont pas fournis.
