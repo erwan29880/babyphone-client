@@ -7,7 +7,11 @@ Un seuil audio permet de définir le niveau de détection sonore pour la ligne d
 
 ## configuration   
 
-Le serveur doit être installé. Renseigner les différents champs du fichier configuration.Constantes. Les valeurs pour l'audio doivent être identiques à celles du serveur.   
+Le serveur doit être installé. Renseigner les différents champs du fichier configuration.Constantes. Les valeurs pour l'audio doivent être identiques à celles du serveur.    
+
+Une librairie externe est nécessaire pour la connexion ssh : JSch - java Secure channel.  
+Version utilisée : jsch-0.1.55.jar
+
 
 ## lancement : 
 
