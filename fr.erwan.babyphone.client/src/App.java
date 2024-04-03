@@ -13,6 +13,7 @@ public class App {
             message = "Le serveur est en cours de démarrage.";
         }
         catch (Exception e) {
+            e.printStackTrace();
             message = "Le serveur est en route.";
         } finally {
             // lancement du front-end
