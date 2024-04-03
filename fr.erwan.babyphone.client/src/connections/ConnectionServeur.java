@@ -52,12 +52,11 @@ final public class ConnectionServeur {
             channel.setInputStream(null);
             ((ChannelExec) channel).setErrStream(System.err);
             channel.connect();
-
-            // Lire la sortie de la commande
-            InputStream in = channel.getInputStream();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-            System.out.println(reader.readLine());
-            reader.close();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException exc) {
+                exc.printStackTrace();
+            }
             channel.disconnect();
             session.disconnect();
     }

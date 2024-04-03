@@ -24,7 +24,6 @@ public class App {
         // lancement de la réception
         new SocketReceiver().init();
 
-
         /**
          * pour enlever le démarrage du serveur en ssh, remplacer le corps de la méthode
          * main par :  
